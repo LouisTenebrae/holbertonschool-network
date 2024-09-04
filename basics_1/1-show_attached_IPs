@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Bash script to show the IPs attached to the network interfaces
+
+ifconfig | grep 'inet ' | awk '{print $2}'
